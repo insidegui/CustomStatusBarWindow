@@ -8,19 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		DDCE291C25C97B7E00044971 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE291B25C97B7E00044971 /* AppDelegate.swift */; };
-		DDCE291E25C97B7E00044971 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE291D25C97B7E00044971 /* ViewController.swift */; };
 		DDCE292025C97B8300044971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDCE291F25C97B8300044971 /* Assets.xcassets */; };
 		DDCE292325C97B8300044971 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDCE292125C97B8300044971 /* Main.storyboard */; };
+		DDCE292C25C97B9800044971 /* StatusBarMenuWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE292B25C97B9800044971 /* StatusBarMenuWindowController.swift */; };
+		DDCE292E25C97BBE00044971 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE292D25C97BBE00044971 /* EventMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DDCE291825C97B7E00044971 /* CustomStatusBarWindow2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomStatusBarWindow2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDCE291B25C97B7E00044971 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DDCE291D25C97B7E00044971 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DDCE291F25C97B8300044971 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDCE292225C97B8300044971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDCE292425C97B8300044971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDCE292525C97B8300044971 /* CustomStatusBarWindow2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomStatusBarWindow2.entitlements; sourceTree = "<group>"; };
+		DDCE292B25C97B9800044971 /* StatusBarMenuWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarMenuWindowController.swift; sourceTree = "<group>"; };
+		DDCE292D25C97BBE00044971 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +55,23 @@
 		DDCE291A25C97B7E00044971 /* CustomStatusBarWindow2 */ = {
 			isa = PBXGroup;
 			children = (
+				DDCE292F25C97BE100044971 /* StatusBarMenuWindowController */,
 				DDCE291B25C97B7E00044971 /* AppDelegate.swift */,
-				DDCE291D25C97B7E00044971 /* ViewController.swift */,
 				DDCE291F25C97B8300044971 /* Assets.xcassets */,
 				DDCE292125C97B8300044971 /* Main.storyboard */,
 				DDCE292425C97B8300044971 /* Info.plist */,
 				DDCE292525C97B8300044971 /* CustomStatusBarWindow2.entitlements */,
 			);
 			path = CustomStatusBarWindow2;
+			sourceTree = "<group>";
+		};
+		DDCE292F25C97BE100044971 /* StatusBarMenuWindowController */ = {
+			isa = PBXGroup;
+			children = (
+				DDCE292B25C97B9800044971 /* StatusBarMenuWindowController.swift */,
+				DDCE292D25C97BBE00044971 /* EventMonitor.swift */,
+			);
+			path = StatusBarMenuWindowController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,8 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDCE291E25C97B7E00044971 /* ViewController.swift in Sources */,
+				DDCE292C25C97B9800044971 /* StatusBarMenuWindowController.swift in Sources */,
 				DDCE291C25C97B7E00044971 /* AppDelegate.swift in Sources */,
+				DDCE292E25C97BBE00044971 /* EventMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +293,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = codes.rambo.experiment.CustomStatusBarWindow2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -302,6 +315,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = codes.rambo.experiment.CustomStatusBarWindow2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
