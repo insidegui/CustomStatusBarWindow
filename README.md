@@ -21,4 +21,4 @@ windowController.showWindow(sender)
 
 If the status item's underlying window can't be found, the window will be positioned centered on screen as a fallback.
 
-The implementation of `StatusBarMenuWindowController` also does a few things to make it behave more like system items like Control Center on macOS 11+, such as posting menu tracking notifications which cause the Menu Bar to stay expanded while its visible on top of a full screen application.
+The implementation of `StatusBarMenuWindowController` also does a few things to make it behave more like system items like Control Center on macOS 11+, such as posting menu tracking notifications which cause the Menu Bar to stay expanded while it's visible on top of a full screen application.
